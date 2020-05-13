@@ -53,10 +53,10 @@ INSTALLED_APPS = [
 ```
 DATABASES = {
 'default': {
-    'NAME': 'news',  # 数据库名
+    'NAME': '###',  # 数据库名
     'ENGINE': 'django.db.backends.mysql',
-    'USER': 'root',  # 用户名
-    'PASSWORD': 'test',  # 密码
+    'USER': '###',  # 用户名
+    'PASSWORD': '###',  # 密码
     'HOST': '127.0.0.1',  # 主机IP
     'PORT': '3306',  # 端口
     'useSSL': 'false',
