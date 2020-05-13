@@ -1,0 +1,10 @@
+nginx部署不能呈现rest或xadmin风格：
+1、在settings.py设置：STATIC_ROOT = os.path.join(BASE_DIR, "static/")
+2、项目下执行：python manage.py collectstatic
+3、在nginx中设置静态文件开放路径：location /static {
+        alias /data/django/rouboApi/static; 
+}
+4、若不成功则在项目下新建templates/static文件夹，把第二步生成的文件copy到该文件夹下。
+5、部署完成后地址即为部署服务器地址加端口号。
+
+6、参考网址：https://www.cnblogs.com/franknihao/p/8298335.html#top
